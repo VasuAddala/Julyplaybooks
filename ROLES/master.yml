@@ -1,0 +1,6 @@
+---
+- name: Roles
+  hosts: all
+  become: true
+  roles:
+  - roles

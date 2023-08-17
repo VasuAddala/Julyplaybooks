@@ -1,0 +1,9 @@
+---
+- name: This playbook creates multiple users
+  hosts: webservers
+  become: true
+  tasks:
+  - name: Creating multiple users
+    user:
+     name: ['brahma', 'vishnu', 'eswara']
+     state: present

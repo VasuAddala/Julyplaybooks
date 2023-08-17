@@ -1,0 +1,9 @@
+---
+- name: deleting dir
+  hosts: all
+  become: true
+  tasks:
+  - name: deleting a dir
+    file:
+      path: /home/ansadmin/dir1
+      state: absent

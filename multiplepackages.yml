@@ -1,0 +1,9 @@
+---
+- name: This playbook installs multiple packages
+  hosts: webservers
+  become: true
+  tasks:
+  - name: Installing multiple packages
+    yum:
+     name: ['git', 'make', 'docker', 'which', 'tree', 'wget']
+     state: installed
